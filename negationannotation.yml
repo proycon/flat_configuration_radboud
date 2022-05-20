@@ -1,0 +1,39 @@
+name: Negation Annotation
+
+#The default annotation focus upon loading a document, set to None to start without a focus
+annotationfocustype: modality
+annotationfocusset: https://raw.githubusercontent.com/tom-sweers42/textgridToFoLiA/main/negation_skos.ttl
+
+allowupload: false
+creategroupnamespaces: true
+autoselectspan: false
+allowedannotationfocus: true
+initialviewannotations: true
+initialglobviewannotations: []
+allowedviewannotations: true
+initialeditannotations: true
+allowededitannotations: true
+allowaddfields: true
+allowdeclare: false
+editformdirect: true
+editformcorrection: false
+editformalternative: false
+editformnew: true
+alloweditformdirect: true
+alloweditformcorrection: false
+alloweditformalternative: false
+alloweditformnew: true
+allowconfidence: true
+alloweditstructure: false
+
+modes:
+  - ['editor','Annotation Editor']
+perspectives:
+  - document
+  - toc
+  - event
+slices: event:12
+searches:
+  - query: SELECT w FOR cue
+    label: Highlight Negation Cues
+    changeperspective: false
